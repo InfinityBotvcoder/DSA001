@@ -1,3 +1,8 @@
+//TIME COMPLEXITY IS O(log(n))
+
+
+
+
 #include <iostream>
 #include <cmath>
 using namespace std;
