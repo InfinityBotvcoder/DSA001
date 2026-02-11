@@ -8,7 +8,7 @@ void insertion_sort(int arr[],int n){
     for(i=0;i<n;i++){
         key=arr[i];
         j=i-1;
-        while(j>=0 && arr[j]>arr[key]){
+        while(j>=0 && arr[j]>key){
             comparision++;
             swap++;
             arr[j+1] = arr[j];
@@ -26,9 +26,9 @@ int main(){
     int arr[n];
 
     for(i=0;i<n;i++){
-        printf("Enter number for position %d",i);
-        scanf("%d",&num);
-        arr[i] = num;
+        /*printf("Enter number for position %d",i);
+        scanf("%d",&num);*/
+        arr[i] = 100-i;
     }
 
     insertion_sort(arr,n);;
@@ -37,6 +37,7 @@ int main(){
     for(i=0;i<n;i++){
         printf("%d  ",arr[i]);
     }
+    printf("Swap_Count: %d Comparision_Count: %d",swap,comparision);
 
     return 0;
 }
